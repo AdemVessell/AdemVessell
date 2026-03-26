@@ -13,7 +13,7 @@ Solo research and engineering in adaptive replay, small-state control, and edge 
 
 ## How I Work
 
-I use AI tools (Claude, Grok) as co-developers — for rapid iteration, scaffolding, and test generation. I design the architecture, specify the invariants, and verify all results independently. The ideas and the math are mine. The velocity is augmented. I'm transparent about this because I think it's the right way to work and the right way to talk about working.
+I use AI tools (Claude, Grok, ChatGPT and Gemini) as co-developers — for rapid iteration, scaffolding, and test generation. I design the architecture, specify the invariants, and verify results independently. The ideas are mine. The velocity is augmented. I'm transparent about this because I think it's the right way to work and the right way to talk about working.
 
 ## Elsewhere
 
