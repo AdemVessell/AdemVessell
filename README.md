@@ -34,7 +34,7 @@ Repaired silent wrong results in loop flattening, floating-point optimizations, 
 
 Also contributed a [test fix to DESC](https://github.com/PlasmaControl/DESC/pull/2330), a stellarator optimization code.
 
-**[CrocSwap / integer-mult-bounds #851](https://github.com/CrocSwap/integer-mult-bounds/pull/851)** · Research-verifier correctness
+**[CrocSwap / integer-mult-bounds #851](https://github.com/CrocSwap/integer-mult-bounds/pull/851)** · Research-verifier correctness  
 Hardened a verifier so incomplete or duplicate bridge-control evidence cannot pass. Added regression coverage while preserving valid reordered records and the selected mathematical result. Merged into `main` on 13 October 2026.
 
 ## Open proposals
@@ -43,7 +43,7 @@ Hardened a verifier so incomplete or duplicate bridge-control evidence cannot pa
 
 ## Review work
 
-**[Swift Foundation #2291](https://github.com/swiftlang/swift-foundation/pull/2291)** · Performance review
+**[Swift Foundation #2291](https://github.com/swiftlang/swift-foundation/pull/2291)** · Performance review  
 An access-order comparison exposed repeated eviction in a proposed Chinese-calendar cache. The author replaced the direct-mapped design with a three-entry LRU and added benchmarks. A bounded local recheck confirmed the selected collision was resolved at that revision; the PR remains open, and later source integration is outside that measurement result. [Author response](https://github.com/swiftlang/swift-foundation/pull/2291#issuecomment-6147308421)
 
 ## Tools and experiments
