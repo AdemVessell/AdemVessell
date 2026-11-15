@@ -8,11 +8,24 @@
   <a href="https://x.com/AdemVessell">X</a>
 </p>
 
-I'm Adem, an independent engineer working on **AI evaluation, compiler correctness, and developer tools**. I also build interactive experiments in physics, graphics, and music.
+I'm Adem, an independent engineer working on **AI evaluation, software reliability, compiler correctness, and developer tools**. I also build interactive experiments in physics, graphics, and music.
 
 I enjoy working out why software fails, then building a fix other people can use. My projects usually grow through experiments, tests, and review.
 
+## AI safety, evaluation, and reliability
+
+I want useful AI systems whose claims and actions can be checked. My work connects evaluation reporting, bounded controls for agent actions, and reproducible evidence—including results that do not support the original idea.
+
+- **Evaluation:** [SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator/pull/63) reporting changes were merged; my [monitorability reference correction](https://github.com/openai/monitorability-evals/pull/57) remains an open proposal. Neither establishes improved model capability.
+- **Action boundaries:** [ProofRail and Tideglass](https://www.xn--arkh-eva.org/isaac/) demonstrate host-enforced checks in controlled settings. [AI PR Governor](https://github.com/AdemVessell/ai-pr-governor) is a public alpha. These are bounded tools, with field effectiveness still unproved.
+- **Inspectable evidence:** [Glass Mind](https://github.com/AdemVessell/glass-mind) exposes a small language model's computations; [receipt-engine](https://github.com/AdemVessell/receipt-engine) checks supplied text deterministically. Inspectability is useful, but neither is a general truth or safety detector.
+- **Research that can fail:** [PARS Audit](https://github.com/AdemVessell/pars-audit) preserves a no-advantage result; the [Numerical Research Kit](https://github.com/AdemVessell/numerical-research-kit) makes numerical comparisons and their limits easier to inspect.
+
+[Explore the evidence and limits](https://www.xn--arkh-eva.org/work/#ai-reliability). I use AI tools throughout this work and document their roles in the individual projects.
+
 ## Merged upstream contributions
+
+Ten authored upstream pull requests have merged across five repositories, checked on 15 November 2026. Acceptance applies to the individual changes.
 
 **[NVIDIA SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator/pull/63)**  
 Added uncertainty estimates and paired-outcome reporting to help interpret agent-skill evaluations.
@@ -37,9 +50,12 @@ Also contributed a [test fix to DESC](https://github.com/PlasmaControl/DESC/pull
 **[CrocSwap / integer-mult-bounds #851](https://github.com/CrocSwap/integer-mult-bounds/pull/851)** · Research-verifier correctness  
 Hardened a verifier so incomplete or duplicate bridge-control evidence cannot pass. Added regression coverage while preserving valid reordered records and the selected mathematical result. Merged into `main` on 13 October 2026.
 
+**[Swift Foundation #2281](https://github.com/swiftlang/swift-foundation/pull/2281)** · JSON coding-path correctness  
+Fixed escaped-key reporting so coding paths use decoded JSON keys. Merged into the experimental `new-codable` branch on 6 November 2026.
+
 ## Open proposals
 
-11 authored upstream proposals were open when this profile was checked on 1 November 2026. [See their detailed status and current limits](https://www.xn--arkh-eva.org/work/#pending).
+11 authored upstream proposals were open when this profile was checked on 15 November 2026. [See their detailed status and current limits](https://www.xn--arkh-eva.org/work/#pending).
 
 ## Review work
 
