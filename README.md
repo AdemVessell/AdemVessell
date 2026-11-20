@@ -25,7 +25,7 @@ I want useful AI systems whose claims and actions can be checked. My work connec
 
 ## Merged upstream contributions
 
-Ten authored upstream pull requests have merged across five repositories, checked on 15 November 2026. Acceptance applies to the individual changes.
+Eleven authored upstream pull requests have merged across six repositories, checked on 20 November 2026. Acceptance applies to the individual changes.
 
 **[NVIDIA SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator/pull/63)**  
 Added uncertainty estimates and paired-outcome reporting to help interpret agent-skill evaluations.
@@ -53,9 +53,12 @@ Hardened a verifier so incomplete or duplicate bridge-control evidence cannot pa
 **[Swift Foundation #2281](https://github.com/swiftlang/swift-foundation/pull/2281)** · JSON coding-path correctness  
 Fixed escaped-key reporting so coding paths use decoded JSON keys. Merged into the experimental `new-codable` branch on 6 November 2026.
 
+**[Google nsjail #368](https://github.com/google/nsjail/pull/368)** · Guest-network source validation  
+Rejected the unspecified IPv4 source address `0.0.0.0` in the opt-in nstun backend, with regression tests. This closes a source-validation gap that could let a workload retaining `CAP_NET_RAW` bypass source-qualified network rules. Merged into `master` on 20 November 2026.
+
 ## Open proposals
 
-11 authored upstream proposals were open when this profile was checked on 15 November 2026. [See their detailed status and current limits](https://www.xn--arkh-eva.org/work/#pending).
+9 authored upstream proposals were open when this profile was checked on 20 November 2026. [See their detailed status and current limits](https://www.xn--arkh-eva.org/work/#pending).
 
 ## Review work
 
