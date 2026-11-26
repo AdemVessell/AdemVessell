@@ -25,10 +25,13 @@ I want useful AI systems whose claims and actions can be checked. My work connec
 
 ## Merged upstream contributions
 
-Eleven authored upstream pull requests have merged across six repositories, checked on 20 November 2026. Acceptance applies to the individual changes.
+Twelve authored upstream pull requests have merged across seven repositories, checked on 26 November 2026. Acceptance applies to the individual changes.
 
 **[NVIDIA SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator/pull/63)**  
 Added uncertainty estimates and paired-outcome reporting to help interpret agent-skill evaluations.
+
+**[NVIDIA SkillSpector #1164](https://github.com/NVIDIA/SkillSpector/pull/1164)** · Static-scan startup  
+Deferred OpenAI and Anthropic SDK imports for static `--no-llm` scans while preserving provider-control provenance and reporting. Added fresh-process regression tests that block the SDK imports and check the reports. Merged on 25 November 2026.
 
 **[xDSL](https://github.com/xdslproject/xdsl/pulls?q=is%3Apr+is%3Amerged+author%3AAdemVessell)** · Six merged fixes  
 Repaired silent wrong results in loop flattening, floating-point optimizations, and dynamic-shape interpretation, alongside loop-rewrite and LLVM-backend checks.
@@ -58,12 +61,22 @@ Rejected the unspecified IPv4 source address `0.0.0.0` in the opt-in nstun backe
 
 ## Open proposals
 
-9 authored upstream proposals were open when this profile was checked on 20 November 2026. [See their detailed status and current limits](https://www.xn--arkh-eva.org/work/#pending).
+9 authored upstream proposals were open when this profile was checked on 26 November 2026. [See their detailed status and current limits](https://www.xn--arkh-eva.org/work/#pending).
 
-## Review work
+## Review and qualification work
+
+**[NVIDIA SkillEvaluator #860](https://github.com/NVIDIA/SkillEvaluator/pull/860)** · Incorporated review  
+Contributed [native-resume review evidence](https://github.com/NVIDIA/SkillEvaluator/pull/860#issuecomment-7059553900); the repair and regression coverage were incorporated in deepujain’s merged PR. This is review work on another author’s implementation, not my authored patch or proof of live-model two-step Gym acceptance.
+
+**[NVIDIA SkillEvaluator #41 / #876](https://github.com/NVIDIA/SkillEvaluator/issues/41#issuecomment-7177553826)** · Independent qualification  
+Ran the corrected 100k-vector registry-overlap workload against PostgreSQL/pgvector and Qdrant and published the [results, commands and controls](https://gist.github.com/AdemVessell/8d0eea35e8caaba3d0ad054feeb8e67d). Neither backend met the full stated gate in that local proxy run. One run per engine, independent of the PR author’s runs; not production-provider validation or a merged implementation.
 
 **[Swift Foundation #2291](https://github.com/swiftlang/swift-foundation/pull/2291)** · Performance review  
 An access-order comparison exposed repeated eviction in a proposed Chinese-calendar cache. The author replaced the direct-mapped design with a three-entry LRU and added benchmarks. A bounded local recheck confirmed the selected collision was resolved at that revision; the PR remains open, and later source integration is outside that measurement result. [Author response](https://github.com/swiftlang/swift-foundation/pull/2291#issuecomment-6147308421)
+
+## Public security reporting
+
+Credited as **Arkhe**, alongside nine other reporters, in [Joomla’s CVE-2026-120653 advisory](https://developer.joomla.org/security-centre/1099-20261101-core-improper-acl-checks-in-webservice-endpoints.html) for missing access-control checks in webservice read actions. Joomla lists fixes in 5.4.11 and 6.2.1. This is shared reporting credit, not authorship of the fix or an independent fixed-version retest.
 
 ## Tools and experiments
 
